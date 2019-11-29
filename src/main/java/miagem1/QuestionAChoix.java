@@ -1,5 +1,7 @@
 package miagem1;
 
+import java.util.List;
+
 /**
  * Interface représentant une question à choix multiple ou à choix exclusif
  */

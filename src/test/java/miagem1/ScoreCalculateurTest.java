@@ -45,4 +45,21 @@ public class ScoreCalculateurTest {
         float scoreAttendu = 200f/3;
         assertEquals(scoreAttendu, score ,0.01f);
     }
+
+    @Test
+    public void testCalculeScoreWhenReponseIsBad2() {
+        ArrayList<Integer> listIndice = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5));
+        float score = scoreCalculateur.calculeScore(listIndice, this.questionAChoixMultiple);
+
+        assertEquals(0f, score ,0.01f);
+    }
+
+    @Test
+    public void testCalculeScoreWhenReponseIsGoodAndBad2() {
+        ArrayList<Integer> listIndice = new ArrayList<Integer>(Arrays.asList(1,2,3));
+        float score = scoreCalculateur.calculeScore(listIndice, this.questionAChoixMultiple);
+        float scoreAttendu = 50f/3;
+        assertEquals(scoreAttendu, score ,0.01f);
+    }
+
 }

@@ -1,5 +1,9 @@
 package miagem1;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Classe représentant une question à choix exclusive
  */
